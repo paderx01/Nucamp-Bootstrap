@@ -26,10 +26,14 @@
             <div class="row row-content align-items-center">
                 <div class="col-4 col-sm-3 col-md-2 align-self-center">
                     <a href="index.html"><img src="img/logo.png" class="img-fluid" /> </a>
+                    
                 </div>
-                <div class="col"> 
-            <h1>NuCamp</h1>
-            <h2>a better way to camp</h2>
+            <div class="col"> 
+                <h1>NuCamp</h1>
+                <h2>a better way to camp</h2>
+            </div>
+            <div class="col-md-4 xl-2 btn btn-info btn-large mt-4">
+                <a href="#reserveForm">Reserve Campsite</a>
             </div>
             </div>
         </div>
@@ -72,6 +76,7 @@
                 <div class="col-sm-4 col-md-3">
                     <h2>Featured Campsites</h2>
                 </div>
+
                 <div class="col">
                     <div class="media">
                         <div class="media-body align-self-center">
@@ -80,8 +85,8 @@
                         </div>
                     <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="Breadcrumb Trail">
                     </div>
-    
                 </div>
+
                 <div class="row">
                     <div class="col-sm-4 order-sm-last col-md-3">
                         <h2 class="text-sm-right">Our Community Partners</h2>
@@ -96,7 +101,7 @@
                         </div>
                     </div>
                 </div>
-</div>
+            </div>
                 <div class="row row-content">
                     <div class="col-sm-6 mx-auto">
                         <div class="card">
@@ -104,27 +109,33 @@
                                 Reserve a Campsite
                             </h3>
                             <div class="card-body">
-                                <form>
-                                    <div class="row">
-                                        <label for="nuCampers" class="col-sm-6 col-form-label">Numbers of Campers
-                                        </label>
-                                            <div class="col">
-                                                <select name="nuCampers" id="numCampers" class="form-control">
-                                                    <option value="Select">Select...</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                    <option value="6">6</option>
-                                                </select>
-                                            </div>
+                                <form id="reserveForm">
+                                    <div class="form-group row">
+                                        <label for="numCampers" class="col-sm-6 col-form-label">Number of Campers</label>
+                                        <!-- Select Dropdown -->
+                                        <div class="col">
+                                            <select name="numCampers" id="numCampers" class="form-control">
+                                                <option selected>Select...</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                    <div class="row">
-                                        <label for="date">Date
-                                        </label>
-                                        <div class="col-sm-6 col-form-label">
-                                            <input type="date" id="date" name="date" placeholder="date">
+                                    <!-- Date -->
+                                    <div class="form-group row">
+                                        <label for="date" class="col-sm-6 col-form-label">Date</label>
+                                        <div class="col-sm-6">   
+                                            <input type="date" class="form-control" id="date" name="date" placeholder="Date" />
+                                        </div>
+                                    </div>
+                                    <!-- Search Button -->
+                                    <div class="form-group row">
+                                        <div class="col">
+                                            <button type="submit" class="btn btn-primary">Search</button>
                                         </div>
                                     </div>
                                 </form>
