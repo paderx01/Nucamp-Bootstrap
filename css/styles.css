@@ -42,7 +42,7 @@ a, a:hover {
   }
 
   .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.50)
   }
 
   .carousel {
